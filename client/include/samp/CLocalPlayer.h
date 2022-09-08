@@ -480,8 +480,8 @@ class SAMP_API CLocalPlayer {
 public:
 
 	CPedSA* m_pPed;
-	char					_pad0[249];
-	BOOL					m_bIsActive;
+	char	_pad0[249];
+	BOOL	m_bIsActive;
 };
 
 SAMP_END

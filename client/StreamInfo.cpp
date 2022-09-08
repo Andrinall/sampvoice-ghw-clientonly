@@ -1,7 +1,7 @@
 #include "StreamInfo.h"
 
-StreamInfo::StreamInfo(const StreamType type, const D3DCOLOR color, std::string name, float distance) noexcept
-    : type(type), color(color), name(std::move(name), distance) {}
+StreamInfo::StreamInfo(const StreamType type, const D3DCOLOR color, std::string name, const float dist) noexcept
+    : type(type), color(color), name(std::move(name)), distance(dist) {}
 
 StreamType StreamInfo::GetType() const noexcept
 {

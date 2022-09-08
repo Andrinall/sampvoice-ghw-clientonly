@@ -609,4 +609,6 @@ void SAMP::CGameSA::ProcessInputEnabling() {
 	((void(__thiscall*)(CGameSA*))SAMP_ADDROF(0xA0410))(this);
 }
 
+BOOL SAMP::CGameSA::IsMenuVisible() { return (BOOL)(*(BYTE*)0xBA67A4); }
+
 #endif

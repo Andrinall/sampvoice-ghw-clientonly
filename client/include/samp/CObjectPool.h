@@ -106,7 +106,7 @@ SAMP_BEGIN
 class SAMP_API CObjectPool {
 public:
 	char		_pad0[8404];			// 0 - 8404
-	CObjectSA* m_pObject[MAX_OBJECTS];	// 8404 - 16804
+	CObjectSA*  m_pObject[MAX_OBJECTS];	// 8404 - 16804
 };
 
 SAMP_END

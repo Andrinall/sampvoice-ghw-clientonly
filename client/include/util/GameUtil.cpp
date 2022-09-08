@@ -131,7 +131,7 @@ void GameUtil::DisableAntiCheat(const AddressesBase& addrBase)
     const std::vector<patch_t> patches =
     {
 #define DefinePatch(offset, bytes) { offset, sizeof(bytes) - 1, bytes }
-#if defined(SAMP_R1)
+#ifdef SAMP_R1
         DefinePatch(0x298116, "\xB8\x45\x00\x00\x00\xC2\x1C\x00"),
         DefinePatch(0x286923, "\xB8\x45\x00\x00\x00\xC2\x1C\x00"),
         DefinePatch(0x99250,  "\xC3")

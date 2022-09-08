@@ -181,8 +181,8 @@ SAMP_BEGIN
 
 class SAMP_API CVehiclePool {
 public:
-	char					_pad0[20404];					// 0 - 20404
-	::CVehicle* m_pGameObject[MAX_VEHICLES];	// 20404 - 28404
+	char			_pad0[20404];					// 0 - 20404
+	::CVehicle* 	m_pGameObject[MAX_VEHICLES];	// 20404 - 28404
 };
 
 SAMP_END

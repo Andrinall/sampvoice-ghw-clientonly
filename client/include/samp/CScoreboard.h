@@ -93,7 +93,7 @@ SAMP_BEGIN
 
 class SAMP_API CScoreboard {
 public:
-	BOOL				m_bIsEnabled;
+	BOOL m_bIsEnabled;
 
 	void Close(bool bHideCursor);
 };

@@ -662,10 +662,10 @@ void PluginMenu::Render() noexcept
                         {
                             for (WORD playerId { 0 }; playerId < MAX_PLAYERS; ++playerId)
                             {
-#if defined(SAMP_R1) || defined(SAMP_R3)
+#if !defined(SAMP_DL)
                                 if (pPlayerPool->IsConnected(playerId) == FALSE || playerId == pPlayerPool->m_localInfo.m_nId)
                                     continue;
-#elif defined(SAMP_DL)
+#else
                                 if (pPlayerPool->IsConnected(playerId) == FALSE || playerId == pPlayerPool->m_nLocalId)
                                     continue;
 #endif

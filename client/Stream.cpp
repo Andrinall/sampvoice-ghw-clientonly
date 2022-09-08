@@ -7,9 +7,9 @@
 #include "SlideController.h"
 
 Stream::Stream(const DWORD streamFlags, const StreamType type,
-               const D3DCOLOR color, std::string name, float distance) noexcept
+               const D3DCOLOR color, std::string name, const float dist) noexcept
     : streamFlags(streamFlags)
-    , streamInfo(type, color, std::move(name), distance)
+    , streamInfo(type, color, std::move(name), dist)
 {}
 
 const StreamInfo& Stream::GetInfo() const noexcept

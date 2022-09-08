@@ -309,6 +309,7 @@ class SAMP_API CGameSA {
 public:
 	void SetCursorMode(int nMode, BOOL bImmediatelyHideCursor);
 	void ProcessInputEnabling();
+	BOOL IsMenuVisible();
 };
 
 CGameSA*& pGame();

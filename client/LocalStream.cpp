@@ -3,9 +3,9 @@
 #include <audio/bass.h>
 
 LocalStream::LocalStream(const StreamType type, const D3DCOLOR color,
-                         std::string name, const float distance) noexcept
-    : Stream(BASS_SAMPLE_3D | BASS_SAMPLE_MUTEMAX, type, color, std::move(name), distance)
-    , distance(distance)
+                         std::string name, const float dist) noexcept
+    : Stream(BASS_SAMPLE_3D | BASS_SAMPLE_MUTEMAX, type, color, std::move(name), dist)
+    , distance(dist)
 {}
 
 void LocalStream::SetDistance(const float distance) noexcept

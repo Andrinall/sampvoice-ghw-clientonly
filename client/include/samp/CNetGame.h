@@ -344,14 +344,14 @@ SAMP_BEGIN
 class SAMP_API CNetGame {
 public:
 	struct SAMP_API Pools {
-		char 				_pad0[8];			// 0 - 8
-		CPlayerPool* m_pPlayerPool;		// 8 - 12
-		CVehiclePool* m_pVehiclePool;		// 12 - 16
-		char 				_pad1[4];			// 16 - 20
-		CObjectPool* m_pObjectPool;		// 20 - 24
+		char 			_pad0[8];			// 0 - 8
+		CPlayerPool*    m_pPlayerPool;		// 8 - 12
+		CVehiclePool*   m_pVehiclePool;		// 12 - 16
+		char 			_pad1[4];			// 16 - 20
+		CObjectPool*    m_pObjectPool;		// 20 - 24
 	};
 
-	char 					_pad0[990];			// 0 - 990
+	char 				_pad0[990];			// 0 - 990
 	Pools* m_pPools;			// 990 - 994
 
 	CPlayerPool* GetPlayerPool();
