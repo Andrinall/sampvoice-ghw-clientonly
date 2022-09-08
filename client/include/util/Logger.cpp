@@ -26,7 +26,7 @@ bool Logger::Init(const char* const fileName) noexcept
 
 bool Logger::Free() noexcept
 {
-    const std::scoped_lock lock { Logger::logFileMutex };
+    const std::scoped_lock lock{ Logger::logFileMutex };
 
     if (std::fclose(Logger::logFile) == EOF)
         return false;

@@ -109,6 +109,7 @@ bool Plugin::OnSampLoad(const HMODULE hModule) noexcept
     if (!Playback::Init(*Plugin::pAddresses))
     {
         Logger::LogToFile("[sv:err:plugin] : failed to init playback");
+        ImGuiUtil::Free();
         Network::Free();
         Samp::Free();
         Render::Free();
@@ -131,16 +132,16 @@ void Plugin::OnInitGame() noexcept
 
 void Plugin::OnExitGame() noexcept
 {
+    ImGuiUtil::Free();
+    Plugin::drawRadarHook.reset();
     Network::Free();
-
     Plugin::streamTable.clear();
-
     Record::Free();
     Playback::Free();
 
     PluginConfig::Save(Path() / SV::kConfigFileName);
+    
     BlackList::Free();
-
     Render::Free();
     Logger::Free();
 }

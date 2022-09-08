@@ -66,8 +66,6 @@ void Render::Free() noexcept
 
     Logger::LogToFile("[dbg:render:free] : module releasing...");
 
-    Render::hookDirect3DCreate9.reset();
-
     Render::deviceInitCallbacks.clear();
     Render::beforeResetCallbacks.clear();
     Render::beginSceneCallbacks.clear();
@@ -75,6 +73,8 @@ void Render::Free() noexcept
     Render::endSceneCallbacks.clear();
     Render::afterResetCallbacks.clear();
     Render::deviceFreeCallbacks.clear();
+
+    Render::hookDirect3DCreate9.reset();
 
     Render::deviceMutex.lock();
     Render::pDirectInterface = nullptr;

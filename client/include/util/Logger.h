@@ -97,10 +97,8 @@ public:
     }
 
 private:
-
     static std::FILE* logFile;
 
     static std::mutex logFileMutex;
     static std::mutex logChatMutex;
-
 };

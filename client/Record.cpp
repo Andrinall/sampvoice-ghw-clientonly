@@ -255,11 +255,11 @@ void Record::Free() noexcept
     Logger::LogToFile("[sv:dbg:record:free] : module releasing...");
 
     Record::StopRecording();
-    BASS_ChannelStop(Record::recordChannel);
-    BASS_RecordFree();
-
     Record::StopChecking();
+
+    BASS_ChannelStop(Record::recordChannel);
     BASS_StreamFree(Record::checkChannel);
+    BASS_RecordFree();
 
     opus_encoder_destroy(Record::encoder);
 

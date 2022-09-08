@@ -84,7 +84,7 @@ void ImGuiUtil::Free() noexcept
 
     ImGuiUtil::win32loadStatus = false;
 
-    if (ImGuiUtil::initStatus)
+    if (ImGuiUtil::initStatus && ImGui::GetCurrentContext() != NULL)
         ImGui::DestroyContext();
 
     ImGuiUtil::initStatus = false;

@@ -1,5 +1,6 @@
 # **SAMPVOICE**
-English | [Русский](https://github.com/CyberMor/sampvoice/blob/master/README.ru.md)
+[Original repository](https://github.com/CyberMor/sampvoice/blob/master/README.md)
+English | [Русский](https://github.com/Andrinall/sampvoice-ghw-clientonly/blob/master/README.ru.md)
 
 ## Description
 ---------------------------------
@@ -8,7 +9,7 @@ English | [Русский](https://github.com/CyberMor/sampvoice/blob/master/REA
 #### Version support
 ----------------------------------
 * Client: SA:MP 0.3.7 (R1, R3), SA:MP 0.3.DL (R1)
-* Server: SA:MP 0.3.7 (R2), SA:MP 0.3.DL (R1)
+* Server: SA:MP 0.3.7 (R2), SA:MP 0.3.DL (R1), O-MP ( build beta 5 - 9 )
 
 ## Features
 ---------------------------------
@@ -19,26 +20,20 @@ English | [Русский](https://github.com/CyberMor/sampvoice/blob/master/REA
 
 ## Installation
 ---------------------------------
-For the plugin to work, it must be installed by the players and on the server. There is a client and server part of the plugin for this.
+For the plugin to work, it must be installed by the players and on the server. There is a [client](https://github.com/Andrinall/sampvoice-ghw-clientonly) and [server](https://github.com/AmyrAhmady/sampvoice/) part of the plugin for this.
 
-#### For players
+## For players
 ---------------------------------
-Players have access to 2 installation options: automatic (via the installer) and manual (via the archive).
-
-##### Automatically
----------------------------------
-1. In order to download the installer, head over to [the `releases` page](https://github.com/CyberMor/sampvoice/releases) and choose the desired version of the plugin.
-2. After downloading, launch the installer and choose the desired language for your installation, afterwards the installer will automatically find your GTA San Andreas folder.
-3. If the directory is correct, click "OK" and wait for the installation to complete. After the installation is complete, the installer will exit.
+Players have access to 1 installation option: manual (via the archive).
 
 ##### Manually
 ---------------------------------
-1. Head over [the `releases` page](https://github.com/CyberMor/sampvoice/releases) and download the archive with the desired client version.
+1. Head over [the `releases` page](https://github.com/Andrinall/sampvoice-ghw-clientonly/releases) and download the archive with the desired client version.
 2. Extract the archive to your GTA San Andreas folder.
 
 #### For developers
 ---------------------------------
-1. Download from [the `releases` page](https://github.com/CyberMor/sampvoice/releases) the desired version of the plugin for your platform.
+1. Download from [the `releases` page](https://github.com/AmyrAhmady/sampvoice/releases) the desired version of the plugin for your platform.
 2. Unpack the archive to the root directory of the server.
 3. Add to the *server.cfg* server configuration file the line *"plugins sampvoice"* for *Win32* and *"plugins sampvoice.so"* for *Linux x86*. **(If you have a Pawn.RakNet plugin be sure to place SampVoice after it)**
 
@@ -154,13 +149,13 @@ Below are further instructions:
 
 Clone the repository to your computer and go to the plugin directory:
 ```sh
-git clone https://github.com/CyberMor/sampvoice.git
+git clone https://github.com/AmyrAhmady/sampvoice.git
 cd sampvoice
 ```
 
 ### Windows (Client/Server)
 ---------------------------------
-To compile the client side of the plugin, you need the *DirectX SDK*. By default, the client part is compiled for version **SA: MP 0.3.7 (R1)**, but you can also explicitly tell the compiler the version for the build using the **SAMP_R1** and **SAMP_R3** macros. In order to build the client and server parts of the plugin for the *Win32* platform, open the *sampvoice.sln* project in MS Visual Studio 2019 and compile it:
+To compile the client side of the plugin, you need the *DirectX SDK*. By default, the client part is compiled for version **SA: MP 0.3.7 (R1)**, but you can also explicitly tell the compiler the version for the build using the **SAMP_R1**, **SAMP_R3**, **SAMP_DL** for and **SAMP_RU**, **SAMP_EN** macros. In order to build the client and server parts of the plugin for the *Win32* platform, open the *sampvoice.sln* project in MS Visual Studio 2019 and compile it:
 > Build -> Build Solution (F7)
 
 ### Linux (Server)
