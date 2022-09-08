@@ -1,6 +1,5 @@
-# **SAMPVOICE**
-[Original repository](https://github.com/CyberMor/sampvoice/blob/master/README.md)
-English | [Русский](https://github.com/Andrinall/sampvoice-ghw-clientonly/blob/master/README.ru.md)
+# **SAMPVOICE** - [Original repository](https://github.com/CyberMor/sampvoice/blob/master/README.md)
+English | [Русский](README.ru.md)
 
 ## Description
 ---------------------------------
@@ -20,7 +19,7 @@ English | [Русский](https://github.com/Andrinall/sampvoice-ghw-clientonly
 
 ## Installation
 ---------------------------------
-For the plugin to work, it must be installed by the players and on the server. There is a [client](https://github.com/Andrinall/sampvoice-ghw-clientonly) and [server](https://github.com/AmyrAhmady/sampvoice/) part of the plugin for this.
+For the plugin to work, it must be installed by the players and on the server. There is a [client](../../) and [server](https://github.com/AmyrAhmady/sampvoice/) part of the plugin for this.
 
 ## For players
 ---------------------------------
@@ -28,7 +27,7 @@ Players have access to 1 installation option: manual (via the archive).
 
 ##### Manually
 ---------------------------------
-1. Head over [the `releases` page](https://github.com/Andrinall/sampvoice-ghw-clientonly/releases) and download the archive with the desired client version.
+1. Head over [the `releases` page](../../releases) and download the archive with the desired client version.
 2. Extract the archive to your GTA San Andreas folder.
 
 #### For developers
